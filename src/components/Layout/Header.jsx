@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const numberArray = Array.from({ length: 4 }, (_, i) => i);
+const numberArray = Array.from({ length: 5 }, (_, i) => i);
 
 const Header = () => {
   return (

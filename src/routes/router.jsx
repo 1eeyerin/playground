@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Step1, Step2, Step3, Step4 } from "../pages";
+import { Home, Step1, Step2, Step3, Step4, Step5 } from "../pages";
 import Container from "../components/Layout/Container";
 
 const router = createBrowserRouter([
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "step4",
         element: <Step4 />,
+      },
+      {
+        path: "step5",
+        element: <Step5 />,
       },
     ],
   },
