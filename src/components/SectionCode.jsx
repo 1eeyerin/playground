@@ -38,6 +38,7 @@ const CopyButton = styled.button`
   background-color: #ffffff;
   font-size: 10px;
   font-weight: bolder;
+  height: auto;
 `;
 
 const Container = styled.div`
