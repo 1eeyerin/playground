@@ -7,6 +7,7 @@ const Header = () => {
       <StyledNav>
         <Link to="/">Home</Link>
         <Link to="/step1">Step1</Link>
+        <Link to="/step2">Step2</Link>
       </StyledNav>
     </StyledHeader>
   );

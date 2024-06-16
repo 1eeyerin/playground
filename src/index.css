@@ -35,17 +35,26 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
+  height: 45px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
+  border-color: #646cff;
   cursor: pointer;
   transition: 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+
+input {
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 0 16px;
+  margin-right: 8px;
 }
+
 button:active {
   transform: scale(0.92);
 }

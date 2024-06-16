@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import { renderToStaticMarkup } from "react-dom/server";
 
-const SectionCode = ({ children }) => {
+const SectionCode = ({ children, isStaticMarkup = false }) => {
+  const codeString = isStaticMarkup ? renderToStaticMarkup(children) : children;
+
   const handleCopy = () => {
     navigator.clipboard.writeText(children);
   };
@@ -8,7 +11,7 @@ const SectionCode = ({ children }) => {
   return (
     <pre>
       <Container>
-        <StyledCode>{children}</StyledCode>
+        <StyledCode>{codeString}</StyledCode>
         <CopyButton onClick={handleCopy}>COPY</CopyButton>
       </Container>
     </pre>
@@ -21,6 +24,7 @@ const StyledCode = styled.code`
   padding: 30px 45px 30px 25px;
   border-radius: 10px;
   min-height: 20px;
+  white-space: pre-wrap;
 `;
 
 const CopyButton = styled.button`

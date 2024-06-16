@@ -1,15 +1,12 @@
 import React from "react";
-import ReactDOMServer from "react-dom/server";
 import SectionCode from "./SectionCode";
 import styled from "styled-components";
 
 const CodeWrapper = ({ children }) => {
-  const codeString = ReactDOMServer.renderToStaticMarkup(children);
-
   return (
     <StyledContainer>
       {children}
-      <SectionCode>{codeString}</SectionCode>
+      <SectionCode isStaticMarkup>{children}</SectionCode>
     </StyledContainer>
   );
 };
