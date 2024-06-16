@@ -12,7 +12,7 @@ const SectionTitle = ({ children }) => {
 };
 
 const StyledContainer = styled.div`
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 `;
 
 export default SectionTitle;

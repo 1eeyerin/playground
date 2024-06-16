@@ -9,14 +9,18 @@ const SectionCode = ({ children, isStaticMarkup = false }) => {
   };
 
   return (
-    <pre>
+    <StyledPre>
       <Container>
         <StyledCode>{codeString}</StyledCode>
         <CopyButton onClick={handleCopy}>COPY</CopyButton>
       </Container>
-    </pre>
+    </StyledPre>
   );
 };
+
+const StyledPre = styled.pre`
+  margin-bottom: 100px;
+`;
 
 const StyledCode = styled.code`
   background-color: #e9ebf2;

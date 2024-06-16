@@ -13,7 +13,6 @@ const CodeWrapper = ({ children }) => {
 
 const StyledContainer = styled.div`
   display: block;
-  margin: 150px 0;
 `;
 
 export default CodeWrapper;
