@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 3%;
+  padding: 32px 0;
   position: sticky;
   top: 0;
   background-color: #fff;
