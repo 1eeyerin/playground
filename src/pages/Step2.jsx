@@ -17,7 +17,7 @@ const Step2 = () => {
       <SectionTitle>window.speechSynthesis</SectionTitle>
       <SpeechForm onSubmit={handleSpeech1} defaultValue="안녕하세요" />
       <SectionCode>
-        {`const utterance = new SpeechSynthesisUtterance(ref.current.value);
+        {`const utterance = new SpeechSynthesisUtterance('안녕하세요');
 
 utterance.rate = 0.5;
 utterance.volume = 0.1;
@@ -25,7 +25,7 @@ window.speechSynthesis.speak(utterance);`}
       </SectionCode>
       <SpeechForm onSubmit={handleSpeech2} defaultValue="hello" />
       <SectionCode>
-        {`const utterance = new SpeechSynthesisUtterance(ref.current.value);
+        {`const utterance = new SpeechSynthesisUtterance('hello');
 
 utterance.rate = 0.5;
 utterance.volume = 0.1;
