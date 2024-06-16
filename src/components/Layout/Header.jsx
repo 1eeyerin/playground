@@ -16,6 +16,12 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 32px 3%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e9ebf2;
+  z-index: 100;
 `;
 
 const StyledNav = styled.nav`

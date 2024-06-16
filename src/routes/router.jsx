@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Step1 } from "../pages";
-import Container from "../components/Container";
+import Container from "../components/Layout/Container";
 
 const router = createBrowserRouter([
   {
